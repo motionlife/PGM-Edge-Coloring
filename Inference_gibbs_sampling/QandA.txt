@@ -1,0 +1,2 @@
+Q:Does your answer depend on the initial choice of assignment used in your Gibbs sampling algorithm?
+A: No, the gibbs function use different initial assignments at each running. As we can see from the given 3 test results, when its and burnin numbers are both large enough, say its=burnin=4, the probabllities of given edge colored as 4 are almost the same (about 0.09).
