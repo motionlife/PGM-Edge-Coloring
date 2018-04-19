@@ -33,7 +33,7 @@ for t = 1:its
                             end
                         end
                     end
-                    MsgC2V(c,v,xi) = max_msg /2;
+                    MsgC2V(c,v,xi) = max_msg;
                 end
             end
         end
@@ -42,7 +42,7 @@ for t = 1:its
     for v = 1:N
         for c = 1:N
             if (A(v,c) > 0)%This is a valid variable marked by v->c; Filter out non-edges
-                MsgV2C(v,c,:) = (w + squeeze(MsgC2V(v,c,:))') /2;
+                MsgV2C(v,c,:) = (w + squeeze(MsgC2V(v,c,:))');
             end
         end
     end
